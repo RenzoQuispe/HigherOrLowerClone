@@ -156,13 +156,16 @@ function HomePage() {
             <div style={{ backgroundColor: '#545455' }} className="flex flex-col items-center w-[820px] h-[700px]">
                 {/*botones */}
                 <div className="flex space-x-4">
-
-                    <button className="flex items-center justify-center hover:scale-105 transition-transform">
-                        <img src="src/assets/boton-app-store.svg" alt="botonAppStore" className="w-[135px] h-[65px] object-fill" />
-                    </button>
-                    <button className="flex items-center justify-center hover:scale-105 transition-transform">
-                        <img src="src/assets/boton-google-play.png" alt="botonGooglePlay" className="w-[135px] h-[65px] object-fill" />
-                    </button>
+                    <a href="https://apps.apple.com/us/app/the-higher-or-lower-game/id1643398769" target="_blank" rel="noopener noreferrer">
+                        <button className="flex items-center justify-center hover:scale-105 transition-transform">
+                            <img src="src/assets/boton-app-store.svg" alt="botonAppStore" className="w-[135px] h-[65px] object-fill" />
+                        </button>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.stattogories" target="_blank" rel="noopener noreferrer">
+                        <button className="flex items-center justify-center hover:scale-105 transition-transform">
+                            <img src="src/assets/boton-google-play.png" alt="botonGooglePlay" className="w-[135px] h-[65px] object-fill" />
+                        </button>
+                    </a>
                 </div>
                 <h1 className="text-3xl text-white font-bold mt-10">Higher or Lower FAQs</h1>
                 {/*Preguntas */}
@@ -248,7 +251,7 @@ function HomePage() {
                     <Link>News</Link>
                     <h1 className="text-white">|</h1>
                     <Link>Our Ambassadors</Link>
-                    <h1 className="text-white">|</h1>  
+                    <h1 className="text-white">|</h1>
                     <Link>Media Assets</Link>
                     <h1 className="text-white">|</h1>
                     <Link>Privacy Policy </Link>
