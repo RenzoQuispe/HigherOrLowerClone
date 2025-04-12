@@ -236,7 +236,7 @@ function HomePage() {
                     </button>
                 </div>
                 {/*Enlaces extras */}
-                <h1 className="text-white font-bold mt-5">Follow Us: <a href="https://www.ejemplo.com" className="text-yellow-300 font-bold">Higher or Lower Game</a></h1>
+                <h1 className="text-white font-bold mt-5">Follow Us: <a href="https://linktr.ee/higherorlowergame" className="text-yellow-300 font-bold">Higher or Lower Game</a></h1>
                 <div className="flex space-x-2 text-sm text-green-500 underline mt-5">
                     <Link>How to play</Link>
                     <h1 className="text-white">|</h1>
