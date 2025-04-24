@@ -14,16 +14,16 @@ function SpotifyPage() {
                 <h2 className="mt-3">Elige cual modo de juego Spotify Higher Or Lower Game te justaria jugar :D</h2>
                 {/*Tipos de Juego*/}
                 <Link
-                    to=""
+                    to="/spotify/artistas"
                     className="relative text-center text-2xl font-bold bg-white w-[350px] h-[60px] mt-5 border-b-4 border-r-4 hover:border-none transition-all"
                 >
                 👨‍🎤 Artists: Monthly Listeners</Link>
                 <Link
-                    to=""
+                    to="/spotify/canciones"
                     className="relative text-center text-2xl font-bold bg-white w-[350px] h-[60px] mt-3 border-b-4 border-r-4 hover:border-none transition-all"
                 >🎸 Songs: Total Plays</Link>
                 <Link
-                    to=""
+                    to="/spotify/albums"
                     className="relative text-center text-2xl font-bold bg-white w-[350px] h-[60px] mt-3 border-b-4 border-r-4 hover:border-none transition-all"
                 >💿 Albums: Total Plays</Link>
                 {/*Tipos de Juego: extra */}
