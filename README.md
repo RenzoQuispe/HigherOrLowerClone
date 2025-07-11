@@ -6,10 +6,9 @@ Adivina cuál de las dos cartas mostradas es mayor. Si aciertas, aparecerá una 
 
 De momento solo es funcional el modo de juego: Movies -> Rating:Movies (http://localhost:5173/imdb/RatingsMovies o http://192.168.1.X:5173/imdb/RatingsMovies, dependiendo de tu IP local y desde donde quieres acceder)
 
-
-![](https://drive.google.com/uc?export=view&id=1Eoaz6EH8QNL647JQS3n60p8Zr3z28mlm)
-![](https://drive.google.com/uc?export=view&id=1Gl0RdF2oALczS6NEvhMpQOTVKK9KFicN)
-![](https://drive.google.com/uc?export=view&id=13HWoDnxS7Cf7ujwuaL9XI2J2gB6BT0LV)
+<img src="https://drive.google.com/uc?export=view&id=1Eoaz6EH8QNL647JQS3n60p8Zr3z28mlm" width="500" />
+<img src="https://drive.google.com/uc?export=view&id=1Gl0RdF2oALczS6NEvhMpQOTVKK9KFicN" width="500" />
+<img src="https://drive.google.com/uc?export=view&id=13HWoDnxS7Cf7ujwuaL9XI2J2gB6BT0LV" width="500" />
 
 ## Configuración
 
