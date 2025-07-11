@@ -3,14 +3,13 @@ from flask_cors import CORS
 from routes.movies import movies_bp
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True , origins=["http://localhost:5174"])  
+CORS(app, supports_credentials=True , origins=["http://localhost:5173"])  
 
 app.register_blueprint(movies_bp,url_prefix='/movies')
 
 @app.route('/')
-def hello_world():
-    return 'hello world'
-
+def flask():
+    return 'Server backend funcionando :D'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True)
