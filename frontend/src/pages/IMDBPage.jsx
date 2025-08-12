@@ -19,11 +19,11 @@ function IMDBPage() {
                     className="relative text-center text-2xl font-bold bg-white w-[400px] h-[50px] mt-5 border-b-4 border-r-4 hover:border-none transition-all"
                 >🎬⭐ Ratings: Movies</Link>
                 <Link
-                    to="/imdb"
+                    to="/imdb/ScoreAnimeMovies"
                     className="relative text-center text-2xl font-bold bg-white w-[400px] h-[50px] mt-3 border-b-4 border-r-4 hover:border-none transition-all"
                 >🎌🎬⭐ Score: Anime Movies</Link>
                 <Link
-                    to="/imdb"
+                    to="/imdb/RatingsHorrorMovies"
                     className="relative text-center text-2xl font-bold bg-white w-[400px] h-[50px] mt-3 border-b-4 border-r-4 hover:border-none transition-all"
                 >😱🎬⭐ Ratings: Horror Movies</Link>
                 <Link

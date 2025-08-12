@@ -6,6 +6,9 @@ import SpotifyPage from "./pages/SpotifyPage"
 import { Toaster } from "react-hot-toast"
 
 import RatingsMovies from "./subpages/IMDB/RatingsMovies"
+import ScoreAnimeMovies from "./subpages/IMDB/ScoreAnimeMovies"
+import RatingsHorrorMovies from "./subpages/IMDB/RatingsHorrorMovies"
+
 import Artistas from "./subpages/spotify/Artistas"
 import Albums from "./subpages/spotify/Albums"
 import Canciones from "./subpages/spotify/Canciones"
@@ -21,6 +24,8 @@ function App() {
 
           <Route path="/imdb" element={<IMDBPage />} />
           <Route path="/imdb/RatingsMovies" element={<RatingsMovies/>}/>
+          <Route path="/imdb/ScoreAnimeMovies" element={<ScoreAnimeMovies/>}/>
+          <Route path="/imdb/RatingsHorrorMovies" element={<RatingsHorrorMovies/>}/>
           
           <Route path="/spotify" element={<SpotifyPage />} />
           <Route path="/spotify/artistas" element={<Artistas/>}/>
