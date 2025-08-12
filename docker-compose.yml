@@ -1,13 +1,13 @@
-version: '3.9'
-
 services:
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: backend
+    container_name: backend_HigherOrLower
+    env_file:
+      - ./.env
     ports:
-      - "5000:5000"
+      - "${SERVER_PORT}:${SERVER_PORT}"
     volumes:
       - ./backend:/app
     restart: unless-stopped
@@ -16,9 +16,12 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: frontend
+    container_name: frontend_HigherOrLower
+    env_file:
+      - ./.env
     ports:
       - "5173:5173"
     volumes:
       - ./frontend:/app
+      - /app/node_modules
     restart: unless-stopped
