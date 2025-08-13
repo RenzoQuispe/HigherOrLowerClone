@@ -1,33 +1,37 @@
 # Clon de HigherOrLowerGame
-Clon del juego Higher or Lower (https://www.higherorlowergame.com/)
+Clon del juego Higher or Lower (https://www.higherorlowergame.com/) desarrollado con Flask y React.
 
 ## Sobre el Juego
+
 Adivina cuál de las dos cartas mostradas es mayor. Si aciertas, aparecerá una nueva carta y simplemente vuelve a adivinar cuál crees que es mayor. Cada juego tiene infinitas preguntas, así que esfuérzate por conseguir una racha de puntuaciones altas. 
 
-De momento solo es funcional el modo de juego: Movies -> Rating:Movies (http://localhost:5173/imdb/RatingsMovies o http://192.168.1.X:5173/imdb/RatingsMovies, dependiendo de tu IP local y desde donde quieres acceder)
+## Inicio rápido con Docker
 
-<img src="https://drive.google.com/uc?export=view&id=1Eoaz6EH8QNL647JQS3n60p8Zr3z28mlm" width="500" />
-<img src="https://drive.google.com/uc?export=view&id=1Gl0RdF2oALczS6NEvhMpQOTVKK9KFicN" width="500" />
-<img src="https://drive.google.com/uc?export=view&id=13HWoDnxS7Cf7ujwuaL9XI2J2gB6BT0LV" width="500" />
+### Configurar el archivo `.env` de ejemplo
+```
+SERVER_PORT=5001
+TMDB_API_KEY='456a9367b3718812d8c50b36c5b2a763'     # Conseguir si TMDB API Key para el modo de juego "🎬🍿Movies"
 
-## Configuración
+HOST_IP=192.168.1.16          # ¡MODIFICAR! Reemplaza con tu IP local
+VITE_API_URL=http://${HOST_IP}:${SERVER_PORT}
+```
+### Levantar los contenedor y acceder a la aplicación web
+```
+docker compose up --build
+```
+Accede a la aplicación web desde cualquier dispositivo en tu red local usando: `http://HOST_IP:5173` (En el ejemplo: `http://192.168.1.16:5173`)
 
-### Setup .env
-Modificar backup/.env - Ejemplo:
+<p align="center"> 
+    <img src="./frontend/public/readme_principal/inicio1.png" width="70%">
+    <img src="./frontend/public/readme_principal/inicio2.png" width="70%">
+    <img src="./frontend/public/readme_principal/inicio3.png" width="70%">
+</p>
 
-```
-TMDB_API_KEY='456a9367b3718812d8c50b36c5b2a763'
-```
+## Modos de juego disponibles
 
-Modificar frontend/.env - Ejemplo:
+### 🎬🍿 Movies
 
-```
-VITE_API_URL=http://192.168.1.10:5000
-```
-### Inicio rapido con Docker
-```
-git clone https://github.com/RenzoQuispe/HigherOrLowerClone.git
-cd HigherOrLowerClone
-docker-compose up --build
-```
+| 🎬⭐ Ratings: Movies | 🎌🎬⭐ Score: Anime Movies | 😱🎬⭐ Ratings: Horror Movies |
+|---------------------|--------------------------|-----------------------------|
+| <img src="./frontend/public/readme_principal/RatingsMovies.png" width="90%"> | <img src="./frontend/public/readme_principal/ScoreAnimeMovies.png" width="90%"> | <img src="./frontend/public/readme_principal/ScoreHorrorMovies.png" width="90%"> |
 
